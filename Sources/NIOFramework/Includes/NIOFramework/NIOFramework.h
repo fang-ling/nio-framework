@@ -20,5 +20,6 @@
 #define NIO_FRAMEWORK_H
 
 #import <NIOFramework/Channel/NIOSelectStrategy.h>
+#import <NIOFramework/Channel/NIOSelectStrategyCalculating.h>
 
 #endif
