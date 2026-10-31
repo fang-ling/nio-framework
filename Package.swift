@@ -27,6 +27,7 @@ let package = Package(
   ],
   dependencies: [
     .package(path: "../c-framework"),
+    .package(path: "../foundation-framework"),
     .package(path: "../objective-c-framework"),
     .package(path: "../testing-framework")
   ],
@@ -35,6 +36,7 @@ let package = Package(
       name: "NIOFramework",
       dependencies: [
         .product(name: "CFramework", package: "c-framework"),
+        .product(name: "FoundationFramework", package: "foundation-framework"),
         .product(name: "ObjectiveCFramework", package: "objective-c-framework")
       ],
       publicHeadersPath: "Includes"
