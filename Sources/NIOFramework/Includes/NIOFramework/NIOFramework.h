@@ -24,4 +24,6 @@
 #import <NIOFramework/Channel/NIOSelectStrategyCalculating.h>
 #import <NIOFramework/Channel/NIOSelectStrategyCalculatorProviding.h>
 
+#import <NIOFramework/Concurrency/NIOThreadAwareExecutor.h>
+
 #endif
