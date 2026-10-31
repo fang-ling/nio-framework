@@ -19,4 +19,6 @@
 #ifndef NIO_FRAMEWORK_H
 #define NIO_FRAMEWORK_H
 
+#import <NIOFramework/Channel/NIOSelectStrategy.h>
+
 #endif
