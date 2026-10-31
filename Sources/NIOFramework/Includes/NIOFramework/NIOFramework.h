@@ -21,5 +21,6 @@
 
 #import <NIOFramework/Channel/NIOSelectStrategy.h>
 #import <NIOFramework/Channel/NIOSelectStrategyCalculating.h>
+#import <NIOFramework/Channel/NIOSelectStrategyCalculatorProviding.h>
 
 #endif
