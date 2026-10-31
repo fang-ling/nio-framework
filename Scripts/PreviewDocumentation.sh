@@ -18,7 +18,7 @@
 ##
 ##===----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------===##
 
-set -uo pipefail
+set -eou pipefail
 
 FOLDER_PREFIX=$([[ "$(uname -s)" == "Darwin" ]] && echo "/tmp" || echo "/dev/shm")
 SYMBOLS_FOLDER=$FOLDER_PREFIX"/symbol-graphs"
@@ -28,17 +28,19 @@ DOCC=$([[ "$(uname -s)" == "Darwin" ]] && echo "xcrun docc" || echo "docc")
 FRAMEWORK_NAME="NIOFramework"
 HEADERS=(
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOSelectStrategy.h
+  Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOSelectStrategyCalculating.h
 )
 
-clang                                                              \
-    -extract-api                                                   \
-    --product-name=$FRAMEWORK_NAME                                 \
-    -o $SYMBOLS_FOLDER/$FRAMEWORK_NAME.symbols.json                \
-    -x objective-c-header                                          \
-    "${HEADERS[@]}"                                                \
-    -ISources/$FRAMEWORK_NAME/Includes                             \
-    -I../c-framework/Sources/CFramework/Includes                   \
-    -I../foundation-framework/Sources/FoundationFramework/Includes \
+clang                                                               \
+    -extract-api                                                    \
+    --product-name=$FRAMEWORK_NAME                                  \
+    -o $SYMBOLS_FOLDER/$FRAMEWORK_NAME.symbols.json                 \
+    -x objective-c-header                                           \
+    "${HEADERS[@]}"                                                 \
+    -ISources/$FRAMEWORK_NAME/Includes                              \
+    -I../c-framework/Sources/CFramework/Includes                    \
+    -I../foundation-framework/Sources/FoundationFramework/Includes  \
+    -I../objective-c-framework/Sources/ObjectiveCFramework/Includes \
     -I.
 
 if [[ "$(uname -s)" == "Darwin" ]]; then
