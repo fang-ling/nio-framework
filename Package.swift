@@ -39,7 +39,10 @@ let package = Package(
         .product(name: "FoundationFramework", package: "foundation-framework"),
         .product(name: "ObjectiveCFramework", package: "objective-c-framework")
       ],
-      publicHeadersPath: "Includes"
+      publicHeadersPath: "Includes",
+      cSettings: [
+        .headerSearchPath("InternalIncludes")
+      ]
     ),
     .testTarget(
       name: "NIOFrameworkTests",
