@@ -20,6 +20,7 @@
 #define NIO_FRAMEWORK_H
 
 #import <NIOFramework/Channel/NIODefaultSelectStrategyCalculatorProvider.h>
+#import <NIOFramework/Channel/NIOIOEvent.h>
 #import <NIOFramework/Channel/NIOIOHandlerContext.h>
 #import <NIOFramework/Channel/NIOIOOperations.h>
 #import <NIOFramework/Channel/NIOIORegistration.h>
