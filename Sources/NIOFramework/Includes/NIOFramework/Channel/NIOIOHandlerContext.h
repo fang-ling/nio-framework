@@ -68,7 +68,7 @@ C_ASSUME_NONNULL_BEGIN
  *
  * Failing to implement this method in an ``NIOIOHandlerContext`` that supports auto-scaling will result in the I/O utilization being perceived as zero.
  *
- * @param activeNanoseconds The duration in nanoseconds of active, non-blocking I/O work.
+ * - Parameter activeNanoseconds: The duration in nanoseconds of active, non-blocking I/O work.
  */
 - (void)reportActiveIOTimeWith:(CInteger64)activeNanoseconds;
 
