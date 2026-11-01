@@ -28,6 +28,7 @@ DOCC=$([[ "$(uname -s)" == "Darwin" ]] && echo "xcrun docc" || echo "docc")
 FRAMEWORK_NAME="NIOFramework"
 HEADERS=(
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIODefaultSelectStrategyCalculatorProvider.h
+  Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOEvent.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOHandlerContext.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOOperations.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIORegistration.h
