@@ -29,6 +29,7 @@ FRAMEWORK_NAME="NIOFramework"
 HEADERS=(
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIODefaultSelectStrategyCalculatorProvider.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOHandlerContext.h
+  Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOOperations.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOSelectStrategy.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOSelectStrategyCalculating.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOSelectStrategyCalculatorProviding.h
