@@ -24,6 +24,7 @@
 #import <NIOFramework/Channel/NIOIOHandle.h>
 #import <NIOFramework/Channel/NIOIOHandler.h>
 #import <NIOFramework/Channel/NIOIOHandlerContext.h>
+#import <NIOFramework/Channel/NIOIOHandlerProviding.h>
 #import <NIOFramework/Channel/NIOIOOperations.h>
 #import <NIOFramework/Channel/NIOIORegistration.h>
 #import <NIOFramework/Channel/NIOSelectStrategy.h>
