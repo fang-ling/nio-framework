@@ -30,6 +30,7 @@ HEADERS=(
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIODefaultSelectStrategyCalculatorProvider.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOEvent.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOHandle.h
+  Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOHandler.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOHandlerContext.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIOOperations.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOIORegistration.h
