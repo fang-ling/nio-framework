@@ -7,4 +7,5 @@ Build high performance applications using an event-driven asynchronous network f
 ### Concurrent Utilities
 
 - ``NIOFramework/NIOFuture``
+- ``NIOFramework/NIOScheduledFuture``
 - ``NIOFramework/NIOGenericFutureObserving``
