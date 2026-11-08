@@ -38,6 +38,8 @@ HEADERS=(
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOSelectStrategy.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOSelectStrategyCalculating.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Channel/NIOSelectStrategyCalculatorProviding.h
+  Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Concurrency/NIOFuture.h
+  Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Concurrency/NIOGenericFutureObserving.h
   Sources/$FRAMEWORK_NAME/Includes/$FRAMEWORK_NAME/Concurrency/NIOThreadAwareExecutor.h
 )
 
