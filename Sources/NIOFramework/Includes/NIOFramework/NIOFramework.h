@@ -31,6 +31,7 @@
 #import <NIOFramework/Channel/NIOSelectStrategyCalculating.h>
 #import <NIOFramework/Channel/NIOSelectStrategyCalculatorProviding.h>
 
+#import <NIOFramework/Concurrency/NIOFuture.h>
 #import <NIOFramework/Concurrency/NIOGenericFutureObserving.h>
 #import <NIOFramework/Concurrency/NIOThreadAwareExecutor.h>
 
