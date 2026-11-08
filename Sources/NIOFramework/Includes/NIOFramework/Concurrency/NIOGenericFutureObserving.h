@@ -1,6 +1,6 @@
 /*===----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------===*
  *
- *  NIOGenericFutureListener.h
+ *  NIOGenericFutureObserving.h
  *  nio-framework
  *
  *  Created by Fang Ling on 2026/11/7.
@@ -16,8 +16,8 @@
  *
  *===----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------===*/
 
-#ifndef NIO_GENERIC_FUTURE_LISTENER_H
-#define NIO_GENERIC_FUTURE_LISTENER_H
+#ifndef NIO_GENERIC_FUTURE_OBSERVING_H
+#define NIO_GENERIC_FUTURE_OBSERVING_H
 
 #import <CFramework/CFramework.h>
 #import <FoundationFramework/FoundationFramework.h>
@@ -30,9 +30,9 @@ C_ASSUME_NONNULL_BEGIN
 /**
  * An object that listens to the result of a ``NIOFuture``.
  *
- * The result of the asynchronous operation is notified once this listener is added by calling ``NIOFuture/addListener:``.
+ * The result of the asynchronous operation is notified once this listener is added by calling ``NIOFuture/addObserver:``.
  */
-@protocol NIOGenericFutureListener <ObjectiveCObject>
+@protocol NIOGenericFutureObserving <ObjectiveCObject>
 
 /**
  * Invoked when the operation associated with the ``NIOFuture`` has been completed.
